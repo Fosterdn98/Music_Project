@@ -36,7 +36,7 @@ public class GigPostSelect {
        sleep(500);
        print("So you are going to: " + GigPostSelectString);
        if(read.equals("1")){
-           Blues.rest();
+           Blues.rest(args);
        }
        if(read.equals("2")){
            //Posters_Blues.Main(String[] args);
@@ -44,7 +44,7 @@ public class GigPostSelect {
        if(read.equals("3")){
            //Both_blues.Main(String[] args);
        }
-       Blues.rest();
+       Blues.rest(args);
        
     }
     
