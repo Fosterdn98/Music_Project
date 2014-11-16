@@ -19,7 +19,7 @@ import static musicproject.Vars.*;
 public class GigPostSelect {
     static BufferedReader bufferRead = new BufferedReader(new InputStreamReader(System.in));
     public static void main(String[] args) throws IOException, InterruptedException {
-        print("You " + CharS + "have been influnced by one of the most iconic blues artists Ray Charles."
+        print("You " + CharS + " have been influnced by one of the most iconic blues artists Ray Charles."
         + " blues has a huge influenced on mainstream American pop music.\n\n");
         
        print("Would you like to Do Some gigs [1], Put up some posters [2], Or would you like to do both [3]");
@@ -35,8 +35,9 @@ public class GigPostSelect {
        }
        sleep(500);
        print("So you are going to: " + GigPostSelectString);
+       GigPostSelectDone = true;
        if(read.equals("1")){
-           Blues.rest(args);
+           Blues.rest();
        }
        if(read.equals("2")){
            //Posters_Blues.Main(String[] args);
@@ -44,7 +45,7 @@ public class GigPostSelect {
        if(read.equals("3")){
            //Both_blues.Main(String[] args);
        }
-       Blues.rest(args);
+       
        
     }
     

@@ -53,6 +53,7 @@ public class MusicProject {
     }
     public static void main(String[] args) throws InterruptedException, IOException {
        print("Welcome To The Music Game");
+       print("WARNING THE FALLOWING GAME HAS DRUG REFRENCES AND MAY BE INAPROPRIATE FOR KIDS UNDER THE AGE OF 10!!!!!");
        sleep(500);
        choose();
        Clear();

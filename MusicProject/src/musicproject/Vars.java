@@ -16,5 +16,6 @@ public class Vars {
     public static int Char;
     public static String CharS;
     public static String GigPostSelectString;
-       
+    public static boolean GigPostSelectDone = false;
+    public static boolean ret = false;
 }

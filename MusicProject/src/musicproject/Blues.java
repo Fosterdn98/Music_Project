@@ -20,18 +20,20 @@ import static musicproject.Vars.*;
  */
 public class Blues {
     static BufferedReader bufferRead = new BufferedReader(new InputStreamReader(System.in));
+    private static String[] args;
     public static void Clear(){
         for(int x = 0; x!=20; x++){
             System.out.print("\n");
         }}
     
     public static void Reset() throws InterruptedException{
-        sleep(800);
+        sleep(1500);
         Clear();
     }
-    public static void rest(String[] args) throws InterruptedException, IOException{
+    public static void rest() throws InterruptedException, IOException{
         Clear();
-        if(GigPostSelectString.equals("Do Some GigDo Soms")){
+        if(GigPostSelectString.equals("Do Some Gigs")){
+            if(ret == false){
             Clear();
             print("you have done gigs for about 2 months now in local areas! tonight after you gig "
                     +"you were found by a scouting agent and you now have a appt. to meet with the record company");
@@ -41,7 +43,8 @@ public class Blues {
             print("Time To Get Some Recognition");
             Reset();
             print("Your First Decision As A Labeled Band");
-            Reset();
+            Reset();}
+            ret=false;
             print("How Would You Like To Get Your Band Name Out There?");
             print("\nTV Advertisments[1], Posters [2], Tours [3]");
             String read = bufferRead.readLine(); 
@@ -60,9 +63,11 @@ public class Blues {
                         print("So you want to make another album");
                         Reset();
                         print("You Made a nother album");
-                        
+                        ret = true;
                         break;
+                        
                     case "2":
+                        
                         print("So you want to go on tour");
                         Reset();
                         print("So you are wanting to go on your first tour!");
@@ -138,6 +143,9 @@ public class Blues {
                                 
                         }
                         break;
+                }
+                if(ret){
+                    Blues.rest();
                 }
                 
                     
@@ -246,13 +254,147 @@ public class Blues {
     
         }
         if(GigPostSelectString.equals("Put Up Some Posters")){
+            Reset();
+            print("you have put up a lot of posters and have got a lot of free music downloads  this seems to be working well");
+            Reset();
+            print("now that you have some recognintion what would you like to  do now");
+            Reset();
+            GigPostSelect.main(args);
             
         }
-    }
+        if(GigPostSelectString.equals("Put Up Some Posters And Do Some Gigs")){
+            Reset();
+            if(!ret){
+            print("you have put up a lot of posters and have got a lot of free music downloads this seems to have gotten you a lot of recognition it is now the date that all "
+                    + "\nthe posters were for YOUR FIRST GIG! after your first gig a record company scouting agent was there and he "
+                    + "\nwould like you to come and visit his office he has heard you music online and in person and his company is interested in a record deal");
+            sleep(1000);
+            Reset();
+            print("you goto the record company and they offer you a record deal you accept of course");
+            Reset();
+            print("time to get more world wide recognition\n");
+        }
+            ret=false;
+            print("So would you like to advertise on the TV [1] Or Put up posters [2] Or Do tours [3]");
+            String read = bufferRead.readLine();
+            switch(read){
+                case "1":
+                    Reset();
+                    print("you are going to advertise on the TV");
+                    Reset();
+                    print("after about 1 week of tv advertisments you have been getting a lot of first album sales");
+                    Reset();
+                    print("now you need to make another decision");
+                    print("\nMake another album [1] Or Go on tour [2] Or Do both [3]");
+                    read = bufferRead.readLine();
+                    switch(read){
+                        case "1":
+                            Reset();
+                            print("So you want to make another album");
+                            Reset();
+                            print("You Made a nother album");
+                            ret = true;
+                            break;
+                        case "2": 
+                            Reset();
+                            print("You Chose to go on tour");
+                            Reset();
+                            print("you are now going on your first tour as a band");
+                            Reset();
+                            print("as you are going on tour you have some " +
+                                    "\nproblems your band is fighting on how you are going to do things and you are haveing some money problems");
+                            print("Turn to drugs [1] Or Push through it [2]");
+                            read = bufferRead.readLine();
+                            switch(read){
+                                case "1":
+                                    Reset();
+                                    print("you Are into a bad habit and the recored compeny findes out");
+                                    Reset();
+                                    print("You Lose");
+                                    print("Game Over");
+                                    sleep(3000);
+                                    print("THE GAME WILL NOW RESTART!!");
+                                    sleep(2500);
+                                    Reset();
+                                    MusicProject.main(args);
+                                    break;
+                                case "2":
+                                    Reset();
+                                    print("you are going to push throuh it that is a good choice!");
+                                    Reset();
+                                    print("you end up fighting through it and your band is now better then ever and ready for your first concert on tour");
+                                    Reset();
+                                    print("after this tour is over your band has a lot of recognition");
+                                    Reset();
+                                    print("YOU WIN!");
+                                    Reset();
+                                    System.exit(0);
+                                    break;   
+                                    }
+                            
+                            break;
+                        case "3":
+                            Reset();
+                                    print("you have realsesed your album and about a month latter it is time for that tour");
+                                    Reset();
+                                    print("you go on tour as you are on tour you and  your band start to fight and things are looking really bad at this point you are all not sure if things are going to last. " + 
+                                            "\nyou have droped everything into this band and if you loss the band you loss everything ");
+                                    sleep(1000);
+                                    Reset();
+                                    print("Turn to drugs [1] Or Fight through it [2]");
+                                    read = bufferRead.readLine();
+                                    switch(read){
+                                        case "1":
+                                            Reset();
+                                            print("You turn to drugs");
+                                            Reset();
+                                            print("the recored compeny finds out and they drop your band");
+                                            print("Game Over");
+                                            sleep(3000);
+                                            print("THE GAME WILL NOW RESTART!!");
+                                            sleep(2500);
+                                            Reset();
+                                            MusicProject.main(args);
+                                            break;
+                                        case "2":
+                                            Reset();
+                                            print("you call a band meeting you all talk about it and after some fighting and complaning you all come to " 
+                                                    + "\na reasanable conclusion your band is still together and you are doing better then when you started");
+                                            Reset();
+                                            print("Your band goes on tour! \nyour band has a great time you continue to do what you have been doing");
+                                            Reset();
+                                            print("YOU WIN!");
+                                            Reset();
+                                            System.exit(0);
+                                            break;
+                    }
+                            
+                    break;
+                    }
+                case "2":
+                    Reset();
+                    print("you are going to put up posters");
+                    //rest of code here
+                    break;
+                case "3":
+                    Reset();
+                    print("you are going to go on tour");
+                    //rest of code here
+                    break;
+                    
+            }
+            if(ret){
+            return;
+        }
+      }}
+        
+    
     
     public static void main(String[] args) throws IOException, InterruptedException {
+        if(!GigPostSelectDone){
         GigPostSelect.main(args);
-        rest(args);
+        }
+        rest();
         
     }
     
