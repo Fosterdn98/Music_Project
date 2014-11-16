@@ -30,7 +30,7 @@ public class MusicProject {
             System.out.print("\n");
         }
    }
-    public static void Check() throws IOException{
+    public static void Check() throws IOException, InterruptedException{
         if(Char == 1){
             CharS = "Charles Williams";
         }
@@ -41,6 +41,10 @@ public class MusicProject {
         String read = bufferRead.readLine();
         if(read.equals("yes")){
            print("Ok Lets Get Started"); 
+           sleep(500);
+           Clear();
+           
+           
         }
         else{
             Clear();
@@ -55,7 +59,7 @@ public class MusicProject {
        Check();
        sleep(500);
        Clear();
-       
+       MusicType_Blues.main(args);
             
         
     }

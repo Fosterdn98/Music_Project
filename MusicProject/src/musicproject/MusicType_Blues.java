@@ -19,13 +19,14 @@ public class MusicType_Blues {
     public static void main(String[] args) throws IOException, InterruptedException {
         print("Would You Like Your New Band To Be A Blues [1] Band Or A Rock Band [2] Or A Disco Band [3] ");
         String read = bufferRead.readLine();
-        if(read == "1"){
+        
+        if(read.equals("1")){
             Blues.main(args);
         }
-        if(read == "2"){
+        if(read.equals("2")){
             //Rock.main(args);
         }
-        if(read == "3"){
+        if(read.equals("3")){
             //Disco.main(args);
         }
     }

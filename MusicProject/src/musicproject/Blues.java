@@ -24,44 +24,69 @@ public class Blues {
         for(int x = 0; x!=20; x++){
             System.out.print("\n");
         }}
+    
+    public static void Reset() throws InterruptedException{
+        sleep(800);
+        Clear();
+    }
     public static void rest() throws InterruptedException, IOException{
         Clear();
         if(GigPostSelectString == "Do Some Gigs"){
             Clear();
             print("you have done gigs for about 2 months now in local areas! tonight after you gig "
                     +"you were found by a scouting agent and you now have a appt. to meet with the record company");
-            sleep(500);
-            Clear();
+            Reset();
             print("you goto the record company and they offer you a record deal you accept of course");
-            sleep(500);
-            Clear();
+            
             print("Time To Get Some Recognition");
-            sleep(500);
-            Clear();
+            Reset();
             print("Your First Decision As A Labeled Band");
-            sleep(500);
-            Clear();
+            Reset();
             print("How Would You Like To Get Your Band Name Out There?");
             print("\nTV Advertisments[1], Posters [2], Tours [3]");
             String read = bufferRead.readLine(); 
-            if(read == "1"){
+            if(read.equals("1")){
                 Clear();
                 print("You Chose To Advertise On The TV");
+                Reset();
+                print("After about a week TV advertising you are starting to get a lot of first album sales");
+                Reset();
+                print("It is time to make a new desicion!");
+                Reset();
+                print("Would you like to Make Another Album [1], Go On Tour [2], Do Both [3]");
+                read = bufferRead.readLine();
+                switch(read){
+                    case "1":
+                        print("So you want to make another album");
+                        Reset();
+                        print("You Made a nother album");
+                        
+                        break;
+                    case "2":
+                        print("So you want to go on tour");
+                        Reset();
+                        print("So you are wanting to go on your first tour!");
+                        break;
+                    case "3":
+                        print("so you want to go on tour and make another album");
+                        //rest of code here
+                        break;
+                }
+                
+                    
             }
-            if(read=="2"){
-                Clear();
-                print("You Chose To Put Up Posters");
-            }
-            if(read == "3"){
-                Clear();
-                print("You Chose To Go On Tour");
-            }
-            
-            
-            
-            
+           if(read.equals("2")){
+               Reset();
+               print("you want to put up posters");
+           }
+           if(read.equals("3")){
+             Reset();
+             print("you want to put up posters and go on tour");
+           }
+    
         }
     }
+    
     public static void main(String[] args) throws IOException, InterruptedException {
         GigPostSelect.main(args);
         rest();
