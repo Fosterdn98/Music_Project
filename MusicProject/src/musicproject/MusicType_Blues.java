@@ -24,7 +24,7 @@ public class MusicType_Blues {
             Blues.main(args);
         }
         if(read.equals("2")){
-            //Rock.main(args);
+            Rock.main(args);
         }
         if(read.equals("3")){
             //Disco.main(args);

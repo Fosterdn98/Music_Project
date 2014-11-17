@@ -30,7 +30,10 @@ public class Blues {
         sleep(1500);
         Clear();
     }
-    public static void rest() throws InterruptedException, IOException{
+    public static void Blues_Rest() throws InterruptedException, IOException{
+         print("You " + CharS + " have been influnced by one of the most iconic blues artists Ray Charles."
+        + " blues has a huge influenced on mainstream American pop music.\n\n");
+        
         Clear();
         if(GigPostSelectString.equals("Do Some Gigs")){
             if(ret == false){
@@ -145,7 +148,7 @@ public class Blues {
                         break;
                 }
                 if(ret){
-                    Blues.rest();
+                    Blues.Blues_Rest();
                 }
                 
                     
@@ -374,12 +377,56 @@ public class Blues {
                 case "2":
                     Reset();
                     print("you are going to put up posters");
-                    //rest of code here
+                    Reset();
+                    print("Now that you have put up some posters now what do you want to do");
+                    ret = true;
                     break;
                 case "3":
                     Reset();
                     print("you are going to go on tour");
-                    //rest of code here
+                    Reset();
+                    print("your tour was not as successful as it could have been you only had one album and you didnt advertise so not many people " 
+                            + "knew becuse of this your band starts to get into a fight about what they did wrong it is not looking to well right now and you get really stressed out and worried");
+                    Reset();
+                    print("you turn to drugs");
+                    Reset();
+                    print("you spend a lot of money on your new habit");
+                    Reset();
+                    print("continue down this new path [1] Or change your ways [2]");
+                    read = bufferRead.readLine();
+                    switch(read){
+                        case "1":
+                            Reset();
+                            print("you are going to continue down this path\n you spend a lot of money you really dont have on this habit" 
+                            + "\n the recored label finds out and you get fired");
+                            print("Game Over");
+                            sleep(3000);
+                            print("THE GAME WILL NOW RESTART!!");
+                            sleep(2500);
+                            Reset();
+                            break;
+                        case "2":
+                            Reset();
+                            print("you chose to change your ways and move down the better path");
+                            Reset();
+                            print("you get out of this bad stuff and you and your band are starting to become one again ");
+                            Reset();
+                            print("you go back and make another album");
+                            Reset();
+                            print("your band goes on tour now that you are all back together");
+                            Reset();
+                            print("you go on tour it is a little bit better then it was befor but you made the same mastakes you did" 
+                                   +  "last time you didnt advertise and you and your band is suffering because of it");
+                            Reset();
+                            print("you advertise this time and then go on tour again this time it is a great success you and your band has learned its lesson ");
+                            Reset();
+                            print("after this tour is over your band has a lot of recognition");
+                            Reset();
+                            print("YOU WIN!");
+                            Reset();
+                            System.exit(0);
+                            break;
+                    }
                     break;
                     
             }
@@ -387,6 +434,7 @@ public class Blues {
             return;
         }
       }}
+     
         
     
     
@@ -394,7 +442,7 @@ public class Blues {
         if(!GigPostSelectDone){
         GigPostSelect.main(args);
         }
-        rest();
+        Blues_Rest();
         
     }
     
