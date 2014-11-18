@@ -10,7 +10,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import static java.lang.Thread.sleep;
-import static main.likePython.*;
+import static musicproject.likePython.*;
 import static musicproject.Vars.*;
 /**
  *
