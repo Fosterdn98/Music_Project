@@ -13,9 +13,9 @@ public class MusicProject {
     static BufferedReader bufferRead = new BufferedReader(new InputStreamReader(System.in));
     
     public static void choose() throws IOException{
-        print("Please Choose A Person\n 1.Charles Williams [years 1950-1970] 2. Jim [years 1980-1990]");
+        print("\nPlease Choose A Person\n 1.Charles Williams [years 1950-1970] 2. Jim [years 1980-1990]");
         String read = bufferRead.readLine(); 
-        print("You Choose: " + read);
+        print("\nYou Choose: " + read);
         
        if(read.equals("1")){
            Char = 1;
@@ -37,10 +37,10 @@ public class MusicProject {
         if(Char == 2){
            CharS = "Jim"; 
         }   
-        print("are you sure that you are wanting to be: " + CharS);
+        print("\nare you sure that you are wanting to be: " + CharS);
         String read = bufferRead.readLine();
         if(read.equals("yes")){
-           print("Ok Lets Get Started"); 
+           print("\nOk Lets Get Started"); 
            sleep(500);
            Clear();
            
@@ -52,7 +52,7 @@ public class MusicProject {
         }
     }
     public static void main(String[] args) throws InterruptedException, IOException {
-       print("Welcome To The Music Game");
+       print("\nWelcome To The Music Game\n");
        print("WARNING THE FALLOWING GAME HAS DRUG REFRENCES AND MAY BE INAPROPRIATE FOR KIDS UNDER THE AGE OF 10!!!!!");
        sleep(500);
        choose();

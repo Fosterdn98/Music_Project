@@ -27,7 +27,7 @@ public class Blues {
         }}
     
     public static void Reset() throws InterruptedException{
-        sleep(1500);
+        sleep(10000);
         Clear();
     }
     public static void Blues_Rest() throws InterruptedException, IOException{
