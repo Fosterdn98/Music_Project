@@ -25,7 +25,7 @@ public class Rock {
         }}
     
     public static void Reset() throws InterruptedException{
-        sleep(1500);
+        sleep(1000);
         Clear();
     }
     public static void Rock_rest() throws InterruptedException, IOException{
@@ -98,7 +98,7 @@ public class Rock {
                                 Reset();
                                 print("YOU WIN THE GAME");
                                 Reset();
-                                System.exit(0);
+                                Credits.main(args);
                                 break;
                                 
                         }
@@ -137,7 +137,7 @@ public class Rock {
                                 Reset();
                                 print("you win the game \n YOU WON");
                                 sleep(3000);
-                                System.exit(0);
+                                Credits.main(args);
                                 break;
                                       
                                 
@@ -209,7 +209,7 @@ public class Rock {
                              Reset();
                              print("you win the game \n YOU WON");
                             sleep(3000);
-                            System.exit(0);
+                            Credits.main(args);
                             break;
                          case "2":
                              Reset();
@@ -228,7 +228,7 @@ public class Rock {
                                      Reset();
                                      print("you win the game \n YOU WON");
                                     sleep(3000);
-                                    System.exit(0);
+                                    Credits.main(args);
                                     break;
                                  case "2":
                                      Reset();
@@ -238,7 +238,7 @@ public class Rock {
                                      Reset();
                                      print("you win the game \n YOU WON");
                                     sleep(3000);
-                                    System.exit(0);
+                                    Credits.main(args);
                                     break;
                                      
                              }break;
@@ -328,7 +328,7 @@ public class Rock {
                                     Reset();
                                     print("YOU WIN!");
                                     Reset();
-                                    System.exit(0);
+                                    Credits.main(args);
                                     break;   
                                     }
                             
@@ -365,7 +365,7 @@ public class Rock {
                                             Reset();
                                             print("YOU WIN!");
                                             Reset();
-                                            System.exit(0);
+                                            Credits.main(args);
                                             break;
                     }
                             
@@ -421,7 +421,7 @@ public class Rock {
                             Reset();
                             print("YOU WIN!");
                             Reset();
-                            System.exit(0);
+                            Credits.main(args);
                             break;
                     }
                     break;
@@ -436,6 +436,9 @@ public class Rock {
     
     
     public static void main(String[] args) throws IOException, InterruptedException {
+        Reset();
+        print("You " + CharS + "  are influenced by the beach boys along with many other bands. rock has a up beat mood to it ");
+        Reset();
         GigPostSelect.main(args);
         
     }

@@ -13,5 +13,6 @@ package musicproject;
 public class likePython {
     public static void print(String what){
         System.out.print(what);
+        System.out.print("\n");
     }
 }

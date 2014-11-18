@@ -101,7 +101,7 @@ public class Blues {
                                 Reset();
                                 print("YOU WIN THE GAME");
                                 Reset();
-                                System.exit(0);
+                                Credits.main(args);
                                 break;
                                 
                         }
@@ -140,7 +140,7 @@ public class Blues {
                                 Reset();
                                 print("you win the game \n YOU WON");
                                 sleep(3000);
-                                System.exit(0);
+                                Credits.main(args);
                                 break;
                                       
                                 
@@ -212,7 +212,7 @@ public class Blues {
                              Reset();
                              print("you win the game \n YOU WON");
                             sleep(3000);
-                            System.exit(0);
+                            Credits.main(args);
                             break;
                          case "2":
                              Reset();
@@ -231,7 +231,7 @@ public class Blues {
                                      Reset();
                                      print("you win the game \n YOU WON");
                                     sleep(3000);
-                                    System.exit(0);
+                                    Credits.main(args);
                                     break;
                                  case "2":
                                      Reset();
@@ -241,7 +241,7 @@ public class Blues {
                                      Reset();
                                      print("you win the game \n YOU WON");
                                     sleep(3000);
-                                    System.exit(0);
+                                    Credits.main(args);
                                     break;
                                      
                              }break;
@@ -331,7 +331,7 @@ public class Blues {
                                     Reset();
                                     print("YOU WIN!");
                                     Reset();
-                                    System.exit(0);
+                                    Credits.main(args);
                                     break;   
                                     }
                             
@@ -368,7 +368,7 @@ public class Blues {
                                             Reset();
                                             print("YOU WIN!");
                                             Reset();
-                                            System.exit(0);
+                                            Credits.main(args);
                                             break;
                     }
                             
@@ -424,7 +424,7 @@ public class Blues {
                             Reset();
                             print("YOU WIN!");
                             Reset();
-                            System.exit(0);
+                            Credits.main(args);
                             break;
                     }
                     break;

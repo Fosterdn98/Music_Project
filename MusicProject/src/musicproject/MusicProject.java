@@ -11,19 +11,26 @@ import static musicproject.Vars.*;
  */
 public class MusicProject {
     static BufferedReader bufferRead = new BufferedReader(new InputStreamReader(System.in));
+    private static String[] args;
     
-    public static void choose() throws IOException{
-        print("\nPlease Choose A Person\n 1.Charles Williams [years 1950-1970] 2. Jim [years 1980-1990]");
+    public static void choose() throws IOException, InterruptedException{
+        print("\nPlease Choose A Person\n 1.Charles Williams [years 1950-1970] 2. Jim [years 1980-1990]  3. Instructions 4. credits");
         String read = bufferRead.readLine(); 
         print("\nYou Choose: " + read);
         
        if(read.equals("1")){
            Char = 1;
        }
-       if("2".equals(read)){
+      if("2".equals(read)){
            Char = 2;
-       }
-       
+              }
+       if("3".equals(read)){
+           Instructions.main(args);
+              }
+       if("2".equals(read)){
+           Credits.main(args);
+           
+              }
     }
     public static void Clear(){
         for(int x = 0; x!=20; x++){
