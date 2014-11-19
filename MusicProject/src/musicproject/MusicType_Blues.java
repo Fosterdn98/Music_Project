@@ -10,6 +10,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import static musicproject.likePython.*;
 import static musicproject.GigPostSelect.bufferRead;
+import static musicproject.Vars.*;
 /**
  *
  * @author Fosterdn98
@@ -22,12 +23,16 @@ public class MusicType_Blues {
         
         if(read.equals("1")){
             Blues.main(args);
+            char1bandtype =1;
         }
         if(read.equals("2")){
             Rock.main(args);
+            char1bandtype =2;
+            
         }
         if(read.equals("3")){
             Disco.main(args);
+            char1bandtype =3;
         }
     }
     

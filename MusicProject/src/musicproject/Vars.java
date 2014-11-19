@@ -18,4 +18,6 @@ public class Vars {
     public static String GigPostSelectString;
     public static boolean GigPostSelectDone = false;
     public static boolean ret = false;
+    public static int char1bandtype;
+    public static int char2bandtype;
 }

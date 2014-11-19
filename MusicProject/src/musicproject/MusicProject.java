@@ -27,7 +27,7 @@ public class MusicProject {
        if("3".equals(read)){
            Instructions.main(args);
               }
-       if("2".equals(read)){
+       if("4".equals(read)){
            Credits.main(args);
            
               }
@@ -57,6 +57,14 @@ public class MusicProject {
             Clear();
             choose();
         }
+        if(CharS.equals("Jim")){
+            MusicType_Contry.main(args);
+            
+        }
+        if(CharS.equals("Charles Williams")){
+            MusicType_Blues.main(args);
+            
+    }
     }
     public static void main(String[] args) throws InterruptedException, IOException {
        print("\nWelcome To The Music Game\n");
@@ -67,7 +75,7 @@ public class MusicProject {
        Check();
        sleep(500);
        Clear();
-       MusicType_Blues.main(args);
+       
             
         
     }

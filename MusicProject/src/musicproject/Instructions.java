@@ -6,6 +6,7 @@
 
 package musicproject;
 import java.io.IOException;
+import static java.lang.Thread.sleep;
 import static musicproject.likePython.*;
 /**
  *
@@ -19,6 +20,7 @@ public class Instructions {
                 + "after you have done this the game will take you onto the path that you have chosen if there is something extra "
                 + "\n if there is something extra that needs to be entered besides a number there will be instructions inside the breaket"
                 + "thank you and have a fun game experince");
+        sleep(30000);
         MusicProject.main(args);
     }
     

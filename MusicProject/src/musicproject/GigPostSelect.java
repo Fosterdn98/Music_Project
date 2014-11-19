@@ -34,7 +34,18 @@ public class GigPostSelect {
        sleep(500);
        print("So you are going to: " + GigPostSelectString);
        GigPostSelectDone = true;
-       Blues.Blues_Rest();
+       if(char1bandtype == 1){
+           Blues.Blues_Rest();
+       }
+       if(char1bandtype == 2){
+           Rock.Rock_rest();
+       }
+       if(char1bandtype == 3){
+           Elect.rest();
+       }
+       if(char1bandtype == 4){
+           Contry.rest();
+       }
        
        
     }
